@@ -1,0 +1,20 @@
+app_de_ecommerce_de_ropa/ 
+├── css/ 
+│ ├── estilo.css 
+│ ├── detalle.css 
+│ ├── checkout.css 
+│ └── variables.css 
+├── js/ 
+│ ├── Components/ 
+│ │ └── modal.js # Archivos según los componentes que crees (Opcional) 
+│ ├── main.js 
+│ ├── Detail.js 
+│ └── checkout.js 
+├── almacenamiento/ 
+│ ├── fuente/ 
+│ │ └── encode_sans/ 
+│ └── img/ 
+├── vistas/ 
+│ ├── detalle.html 
+│ └── pago.html 
+└── índice.html
