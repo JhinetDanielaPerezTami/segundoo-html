@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navegación superior -->
+        <header class="checkout-header">
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <h1>Checkout</h1>
+            <button class="menu-toggle">
+                <i class="fas fa-ellipsis-h"></i>
+            </button>
+        </header>
+
+        <div class="checkout-content">
+            <div class="cart-section">
+                <!-- Productos en el carrito -->
+                <section class="cart-items">
+                    <!-- Producto 1 en carrito -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="../storage/img/product1.jpg" alt="Modern light clothes">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-info">
+                                <h3>Modern light clothes</h3>
+                                <button class="item-options">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                            <p class="item-price">$212.99</p>
+                            <div class="item-quantity">
+                                <button class="quantity-btn minus">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <span class="quantity">4</span>
+                                <button class="quantity-btn plus">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 2 en carrito -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="../storage/img/product2.jpg" alt="Modern light clothes">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-info">
+                                <h3>Modern light clothes</h3>
+                                <button class="item-options">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                            <p class="item-price">$162.99</p>
+                            <div class="item-quantity">
+                                <button class="quantity-btn minus">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn plus">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="checkout-summary">
+                <!-- Información de envío -->
+                <section class="shipping-info">
+                    <h2>Shipping Information</h2>
+                    <div class="payment-method">
+                        <div class="card-info">
+                            <div class="card-icon">
+                                <img src="../storage/img/visa.png" alt="Visa">
+                            </div>
+                            <div class="card-number">
+                                **** **** **** 2143
+                            </div>
+                        </div>
+                        <button class="change-card">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Resumen de compra -->
+                <section class="order-summary">
+                    <div class="summary-row">
+                        <span>Total (3 items)</span>
+                        <span class="price">$1,014.95</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping Fee</span>
+                        <span class="price">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount</span>
+                        <span class="price">$0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Sub Total</span>
+                        <span class="price">$1,014.95</span>
+                    </div>
+                    
+                    <!-- Botón de pago -->
+                    <button class="pay-btn">Pay</button>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/checkout.js"></script>
+</body>
+</html>
+

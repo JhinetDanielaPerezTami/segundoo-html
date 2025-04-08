@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile eCommerce Clothing Store</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header con saludo personalizado -->
+        <header class="header">
+            <div class="user-greeting">
+                <div class="greeting-text">
+                    <p>Hello, Welcome <span class="wave-emoji">👋</span></p>
+                    <h2>Daniela Perez</h2>
+                </div>
+                <div class="user-avatar">
+                    <img src="imagenes/perfil.jpg" alt="Foto de perfil">
+                </div>
+            </div>
+            
+            <!-- Barra de búsqueda -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search clothes...">
+                    <button class="filter-btn">
+                        <i class="fas fa-sliders-h"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Categorías -->
+        <section class="categories">
+            <div class="category-tabs">
+                <div class="category-tab active" data-category="all">
+                    <i class="fas fa-th"></i>
+                    <span>All items</span>
+                </div>
+                <div class="category-tab" data-category="dress">
+                    <i class="fas fa-female"></i>
+                    <span>Dress</span>
+                </div>
+                <div class="category-tab" data-category="tshirt">
+                    <i class="fas fa-tshirt"></i>
+                    <span>T-Shirt</span>
+                </div>
+                <div class="category-tab" data-category="bags">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Bags</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos -->
+        <section class="products">
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card" onclick="window.location.href='views/detail.html'" data-category="modern light clothes">
+                    <div class="product-image">
+                        <img src="imagenes/modern.png" alt="Modern Light Clothes">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h4>Modern Light Clothes</h4>
+                        <div class="product-details">
+                            <p class="product-price">$212.99</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card" data-category="dress">
+                    <div class="product-image">
+                        <img src="imagenes/DressL.png" alt="Light Dress Bless">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h4>Light Dress Bless</h4>
+                        <p class="product-category">Dress modern</p>
+                        <div class="product-details">
+                            <p class="product-price">$162.99</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card" data-category="winter">
+                    <div class="product-image">
+                        <img src="imagenes/winter.png" alt="Winter Clothes">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h4>Winter Clothes</h4>
+                        <div class="product-details">
+                            <p class="product-price">$775.99</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card" data-category="tshirt">
+                    <div class="product-image">
+                        <img src="imagenes/summer.png" alt="Summer Collection">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h4>Summer T-Shirt</h4>
+                        <div class="product-details">
+                            <p class="product-price">$129.99</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menú móvil -->
+        <nav class="mobile-menu">
+            <a href="index.html" class="menu-item active">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-shopping-bag"></i>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="far fa-heart"></i>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-user"></i>
+            </a>
+        </nav>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

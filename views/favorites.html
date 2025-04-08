@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Favoritos</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/favorites.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-top">
+                <button class="back-btn" onclick="window.location.href='../index.html'">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <h1>Mis Favoritos</h1>
+                <div class="placeholder-div"></div>
+            </div>
+        </header>
+
+        <!-- Productos favoritos -->
+        <section class="favorites-section">
+            <div class="favorites-grid" id="favorites-container">
+                <!-- Los productos favoritos se cargarán dinámicamente aquí -->
+                <div class="no-favorites-message" style="display: none;">
+                    <i class="far fa-heart"></i>
+                    <p>No tienes productos favoritos</p>
+                    <button class="explore-btn" onclick="window.location.href='../index.html'">Explorar productos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menú móvil -->
+        <nav class="mobile-menu">
+            <a href="../index.html" class="menu-item">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-shopping-bag"></i>
+            </a>
+            <a href="favorites.html" class="menu-item active">
+                <i class="fas fa-heart"></i>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-user"></i>
+            </a>
+        </nav>
+    </div>
+
+    <script src="../js/favorites.js"></script>
+</body>
+</html>

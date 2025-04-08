@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Tarjeta del producto -->
+        <div class="product-card">
+            <div class="product-header">
+                <button class="back-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="favorite-btn">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+            <div class="product-image">
+                <img src="../imagenes/DressL.png" alt="Light Dress Bless">
+            </div>
+        </div>
+
+        <!-- Información del producto -->
+        <div class="product-info">
+            <h1 class="product-title">Light Dress Bless</h1>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <span class="rating">5.0</span>
+                <span class="reviews">(782 reviews)</span>
+            </div>
+            
+            <p class="product-description">
+                Its simple and elegant shape makes it perfect for those of you who like minimalist clothes
+                <a href="#" class="read-more">Read More...</a>
+            </p>
+
+            <!-- Selector de tamaño -->
+            <div class="size-section">
+                <h3>Choose Size</h3>
+                <div class="size-options">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn active">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+            </div>
+
+            <!-- Selector de color -->
+            <div class="color-section">
+                <h3>Color</h3>
+                <div class="color-options">
+                    <button class="color-btn" style="background-color: #8E8E93;"></button>
+                    <button class="color-btn" style="background-color: #333333;"></button>
+                    <button class="color-btn active" style="background-color: #000000;"></button>
+                </div>
+            </div>
+
+            <!-- Botón de compra -->
+            <div class="buy-section">
+                <div class="quantity-selector">
+                    <button class="quantity-btn minus">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn plus">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Add to Cart | $109.99
+                    <span class="original-price">$162.99</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú móvil -->
+        <nav class="mobile-menu">
+            <a href="../index.html" class="menu-item">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-shopping-bag"></i>
+            </a>
+            <a href="favorites.html" class="menu-item">
+                <i class="far fa-heart"></i>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-user"></i>
+            </a>
+        </nav>
+    </div>
+
+    <script src="../js/detail.js"></script>
+</body>
+</html>
